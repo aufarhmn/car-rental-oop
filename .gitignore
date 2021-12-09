@@ -1,0 +1,8 @@
+#ignore vscode configuration
+.vscode
+
+#ignore car.exe
+Car.exe
+
+#ignore folder class diagram
+ClassDiagram

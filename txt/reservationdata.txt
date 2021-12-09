@@ -1,0 +1,27 @@
+Nama              :Nando Wicaksana
+Nomor Telepon     :0899999999
+NIK               :34099021092190209
+Alamat            :Sleman, Yogyakarta
+Jenis Mobil       :Daihatsu Xenia
+Jumlah Mobil      :1
+Lama Peminjaman   :1
+Total Biaya       :15000
+
+Nama              :Putu
+Nomor Telepon     :0899309092039
+NIK               :3453820382302912
+Alamat            :Kotalama, Semarang, Jawa Tengah
+Jenis Mobil       :Mercedes Benz E250
+Jumlah Mobil      :4
+Lama Peminjaman   :3
+Total Biaya       :1920000
+
+Nama              :Muhammad Adi
+Nomor Telepon     :081299219201
+NIK               :349021929011219
+Alamat            :Jalan Kenangan No 4, Berbah, Sleman, Yogyakarta
+Jenis Mobil       :Honda HRV Prestige
+Jumlah Mobil      :1
+Lama Peminjaman   :48
+Total Biaya       :1296000
+
