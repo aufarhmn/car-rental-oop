@@ -1,8 +1,12 @@
+==============================
 Welcome to ABC Car Rental
-
+==============================
 Please select an option below:
+==============================
 1. Car List
 2. Add Reservation
 3. Reservation List
 4. Edit Reservation
-5. Exit      							       
+5. End Reservation
+6. Exit    
+==============================  							       

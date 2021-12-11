@@ -27,18 +27,6 @@ int Reservation::getResDuration() {
     return Reservation::resDuration;
 }
 
-void Reservation::setResPrice(double resPrice) {
-    Reservation::resPrice = Reservation::resQuantity * Reservation::resDuration; Car::getCarPrice;
-}
-
-double Reservation::getResPrice() {
-    return Reservation::resPrice;
-}    
-
-void Reservation::addReservation(){
-    //
-}
-
 void Reservation::showReservation() {
     string line;
     ifstream file3;

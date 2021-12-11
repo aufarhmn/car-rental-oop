@@ -1,5 +1,5 @@
 /**
- * Project Untitled
+ Detail Fungsi User
  */
 
 
@@ -9,6 +9,8 @@
 #include <fstream>
 
 using namespace std;
+
+//Implementasi setter dan getter pada class User untuk memudahkan mengambil dan mengatur member class
 
 void User::setName(string name) {
     User::name = name;
@@ -41,6 +43,8 @@ void User::setAlamat(string alamat) {
 string User::getAlamat() {
     return User::alamat;
 }
+
+//construktor user untuk menginput nilai dari variabel pada user
 
 User::User(string name = "no name", string noTelp = "0", string nik = "0", string alamat = "Invalid"){
     User::name = name;

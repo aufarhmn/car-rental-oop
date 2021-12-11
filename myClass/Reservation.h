@@ -18,10 +18,6 @@ int getResQuantity();
 void setResDuration(int resDuration);
 
 int getResDuration();
-    
-void setResPrice(double resPrice);
-    
-double getResPrice();
 
 void showReservation();
 
@@ -30,7 +26,6 @@ Reservation(int resQuantity, int resDuration);
 private: 
     int resQuantity;
     int resDuration;
-    double resPrice;
 };
 
 #endif 

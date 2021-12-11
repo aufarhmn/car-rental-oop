@@ -7,57 +7,62 @@
 #include <windows.h>
 #include <string>
 #include <limits>
-#include "Car.h"
-#include "User.h"
-#include "Welcome.h"
-#include "Reservation.h"
-#include "Menu.cpp"
+#include "myClass/Car.h"
+#include "myClass/User.h"
+#include "myClass/Welcome.h"
+#include "myClass/Welcome.cpp"
+#include "myClass/Reservation.h"
+#include "myClass/Menu.cpp"
 
 using namespace std;
 
-int login();
-void greeting();
-void menu();
+//Prototype
+int login(); //Menu Login dengan password, yaitu "admin"
+void greeting(); //Menampilkan judul program dan nama anggota kelompok
+void menu(); //Berisi pilihan menu dan fitur yang dimiliki program ini yang diambil dari file Menu.cpp
 
-int main(){
-    login();
-    greeting();
-    menu();
+//Fungsi Utama dari Program
+int main(){   
+    login(); //Memulai menu login
+    greeting(); //Pembuka dari program
+    menu(); //Menampilkan menu program
     return 0;
 }
 
+//Detail Fungsi Login
 int login(){
     string pass ="";
     char ch;
-    cout<<"\n\n\n\n\n\n\n\n\t\t\t\t\t       CAR RENTAL SYSTEM \n\n";
-    cout<<"\t\t\t\t\t------------------------------";
-    cout<<"\n\t\t\t\t\t\t     LOGIN \n";	
-    cout<<"\t\t\t\t\t------------------------------\n\n";	
-    cout << "\t\t\t\t\tEnter Password: ";
+    cout<<"\n\n\n\t\t\t\t        WELCOME TO ABC CAR RENTAL SYSTEM \n";   //Nama Program
+    cout<<"\n\t\t\t\t\t================================";
+    cout<<"\n\t\t\t\t\t\t     LOGIN \n";	//Mulai proses login
+    cout<<"\t\t\t\t\t================================\n\n";	
+    cout << "\t\t\t\t\tEnter Password: ";  //Memasukkan password
     ch = _getch();
     while(ch != 13){
         pass.push_back(ch);
         cout << '*';
         ch = _getch();
     }
-    if(pass == "admin"){
+    if(pass == "admin"){   //Password: admin
         cout << "\n\n\t\t\t\t\t==============================";
-        cout << "\n\t\t\t\t\t\tAccess Granted!";
+        cout << "\n\t\t\t\t\t\tAccess Granted!";   //Jika password benar, maka akses diijinkan
         cout << "\n\t\t\t\t\t==============================" << endl;
         system("PAUSE");
         system ("CLS");
     }
     else{
         cout << "\n\n\t\t\t\t\t==============================";
-        cout << "\n\t\t\t\t\t\tAccess Aborted...\n\t\t\t\t\t\tPlease Try Again";
+        cout << "\n\t\t\t\t\t\tAccess Aborted...\n\t\t\t\t\t\tPlease Try Again";  //Jika akses salah, maka akses ditolak
         cout << "\n\t\t\t\t\t==============================" << endl;
         system("PAUSE");
         system("CLS");
-        login();
+        login(); //Kembali ke menu login
     };
 }
 
+//Menampilkan judul dan nama anggota pembuat program
 void greeting(){
-    welcome view;
-    view.welcomeGreeting();
+    Welcome view; //Memanggil class Welcome
+    view.welcomeGreeting(); //Memanggil fungsi welcomeGreeting dari class Welcome
 }
