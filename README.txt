@@ -10,7 +10,8 @@ Program ini memiliki beberapa fitur, yaitu:
 2. Menambahkan Reservasi
 3. Menampilkan Daftar Reservasi
 4. Mengubah Reservasi
-5. Menutup Program
+5. Memberi Tanda bahwa Reservasi sudah selesai
+6. Menutup Program
 
 
 Program ini dapat dijalankan dengan cara:
